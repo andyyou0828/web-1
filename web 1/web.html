@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>刻網頁</title>
+<link href="layout.css" rel=stylesheet type="text/css" >
+</head>
+
+<body>
+
+<div id="header">
+    <h1>2018: Year in Review by Green 
+    Chameleon Wins Site of the 
+    Month March</h1>
+</div>
+
+<div id="topPhoto">   
+    <img src="https://assets.awwwards.com/awards/images/2019/04/SOTM-march-2019-cover.jpg">
+</div>
+
+<div id="content1">
+    <p>Round of applause to Green Chameleon for winning 
+    Site of the Month March with Our 2018: Year in 
+    Review, here they share the processes of creating 
+    their developer driven 3D time capsule. Thanks for all 
+    the votes and tweets, find the winner of the Pro Plan 
+    at the end of the article.</p>
+</div>
+
+<div id="content2">
+    <p>Our 2018: Year in Review site was created as a place to document and showcase 
+    the year gone by. The agency has evolved, we’ve produced our best work to date 
+    and picked up a number of accolades along the way; the Year in Review site was 
+    created to give us somewhere to house all of this content in a fun and unique way.</p>
+</div>
+
+<div id="photo1">
+    <img src="https://assets.awwwards.com/awards/gallery/2019/04/SOTM-march-2019-img1.jpg">
+</div>
+
+<div id="content3">
+    <p>The process for creating the site was a new one for us. The whole concept was 
+    driven by dev, meaning our usual way of doing things was flipped; our developer, Ash,
+    first showcased the technology and concept of travelling through a 3D space, which 
+    we then designed over the top of, adding layers of detail and additional features as 
+    we progressed.
+    The project was an excuse to make something ‘just for fun’ in a short time frame, but 
+    it also taught us a lot; the process of starting in code is something we’ll definitely 
+    take forward and incorporate into more projects.</p>
+</div>
+
+<div id="content4">
+    <h2>Performance</h2>
+    <p>Three.js has some pretty handy frustum culling stuff built in which helped a great 
+    deal when it comes to only rendering what is visible, but we needed to extend this 
+    functionality to handle when videos should be played and paused as you travel 
+    through the timeline. We wanted the user to be able to travel through the timeline as 
+    fast as they wanted whilst keeping it as smooth as possible, and constantly playing 
+    and pausing videos restricted this. So, we only updated video states when moving at 
+    a slow enough speed to keep things as lightweight as possible.</p>
+</div>
+
+<div id="show">
+    <a href="https://2018.craftedbygc.com/">
+    <video height="417" width="299" poster="https://assets.awwwards.com/awards/external/2019/03/5c78f85d0bd35067383117.mp4"></video>
+    </a>
+</div>
+
+<div id="content5">
+    <h3>Device Video Limits</h3>
+    <p>HTML Video element limits wasn’t something we knew about until we stress tested 
+    with a few dozen videos. At first we saw a hard limit of 16 videos when testing on an 
+    iPad so we tested on a number of other mobile devices and lower spec machines 
+    where we came to the conclusion it must be a hardware limitation. We overcame this 
+    on these devices by only loading the metadata which includes the video dimensions 
+    and the first frame that was required to build the timeline, then clearing the video 
+    element and moving onto the next one. The video would then only play once the 
+    item had been opened.</p>
+</div>
+
+<div id="video">
+    <embed src="https://youtu.be/-S-nUuKQ85o" allowfullscreen="true" height="417" width="299">
+</div>
+
+<div id="content6">
+    <h5>Technologies</h5>
+    <p>Our hosting provider is Digital Ocean, the server is running Nginx on the HTTP2 
+    protocol with brotli/gzip compression. This along with optimising assets as much as
+    possible means we can serve the site in ~20Mb.
+    Aside from HTML and CSS which was used to create the UI around the edge of the 
+    screen and the entrance and loading screen, WebGL was at the core of the site – 
+    specifically the Three.js library. There were two main challenges that quickly 
+    became apparent in the development process: keeping up performance with so 
+    many objects in the 3D space, and getting past the device’s limits when it comes to 
+    videos. 
+    Thanks for getting involved and voting, the winner of the year's Pro Plan is 
+    @DannaTrujillo, please DM us to get your upgrade</p>
+</div>
+
+<div id="footer">
+    <h6>The awards for design, creativity and innovation on the Internet</h6>
+</div>
+
+<div id="nav">
+    <u1>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">F.A.Q</a></li>
+        <li><a href="#">Cookies Policy</a></li>
+        <li><a href="#">Legal Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </u1>
+</div>
+
+</body>
+
+</html>
